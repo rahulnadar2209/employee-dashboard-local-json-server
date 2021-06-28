@@ -26,7 +26,7 @@ export class ApiService {
                   return res;
                 }))
   }
-  deleteemployee(data:any,id:number){
+  deleteemployee(id:number){
     return this.http.delete<any>(this.url+'/'+id)
                 .pipe(map((res:any)=>{
                   return res;
