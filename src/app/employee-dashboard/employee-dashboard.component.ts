@@ -35,6 +35,8 @@ export class EmployeeDashboardComponent implements OnInit {
         console.log(res);
         alert('Employee added successfully!!');
         this.formvalue.reset();
+        let close=document.getElementById('cancel');
+        close.click();
       },
       err => {
         alert('something went wrong!');
